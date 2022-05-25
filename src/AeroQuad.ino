@@ -1294,7 +1294,8 @@
  * Aeroquad
  ******************************************************************/
 void setup() {
-  Serial.begin(9600);
+  
+  // Serial.begin(9600);
   SERIAL_BEGIN(BAUD);
   pinMode(LED_Green, OUTPUT);
   digitalWrite(LED_Green, LOW);
@@ -1573,8 +1574,8 @@ void loop () {
 
   Serial.println("VALOR ");
   Serial.println(currentTime);
-  Serial.println(previousTime);
-  delay(800);
+  Serial.println(deltaTime);
+  delay(900);
 
   measureCriticalSensors();
 
